@@ -1,0 +1,112 @@
+import React from 'react';
+import { FaWordpress, FaReact, FaShopify, FaLaptopCode, FaRocket, FaDraftingCompass, FaRedoAlt, FaLayerGroup } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
+import './Services.css';
+
+const Services = () => {
+  return (
+    <div className="services">
+
+      <section className="Services-banner">
+        <div className="banner-content fade-in">
+          <h1>Services</h1>
+          <nav className="breadcrumb">
+            <a href="/">Home</a> <span>/</span> <span>Services</span>
+          </nav>
+        </div>
+      </section>
+
+      <h1 className="services-title">Innovative Solutions for Your Growth</h1>
+      <div className="services-container">
+        <div className="service-card">
+          <div className="icon">
+            <FaWordpress />
+          </div>
+          <h2>WordPress Development</h2>
+          <p>Custom, scalable WordPress websites tailored for businesses that prioritize speed and SEO.</p>
+        </div>
+
+        <div className="service-card">
+          <div className="icon">
+            <FaShopify />
+          </div>
+          <h2>Shopify Store Setup</h2>
+          <p>Build high-converting Shopify stores with elegant layouts and smooth checkout experiences.</p>
+        </div>
+
+        <div className="service-card">
+          <div className="icon">
+            <FaShopify />
+          </div>
+          <h2>Shopify Customization</h2>
+          <p>Advanced theme and feature customizations that align perfectly with your business goals.</p>
+        </div>
+
+        <div className="service-card">
+          <div className="icon">
+            <FaWordpress />
+          </div>
+          <h2>WooCommerce Stores</h2>
+          <p>Powerful, responsive online stores built with WooCommerce and WordPress integration.</p>
+        </div>
+
+        <div className="service-card">
+          <div className="icon">
+            <FaReact />
+          </div>
+          <h2>React Frontend Development</h2>
+          <p>Dynamic and interactive UIs using modern ReactJS principles for speed and scalability.</p>
+        </div>
+
+        <div className="service-card">
+          <div className="icon">
+            <FaLaptopCode />
+          </div>
+          <h2>Responsive Website Design</h2>
+          <p>Pixel-perfect, mobile-first design that adapts seamlessly to all device screens.</p>
+        </div>
+
+        <div className="service-card">
+          <div className="icon">
+            <FaRocket />
+          </div>
+          <h2>Speed Optimization</h2>
+          <p>Improve load times and performance scores with advanced caching and optimization techniques.</p>
+        </div>
+
+        <div className="service-card">
+          <div className="icon">
+            <FaDraftingCompass />
+          </div>
+          <h2>UI/UX Design</h2>
+          <p>Transforming Figma designs into clean code with smooth interactions and visual hierarchy.</p>
+        </div>
+
+        <div className="service-card">
+          <div className="icon">
+            <FaRedoAlt />
+          </div>
+          <h2>Website Redesign & Maintenance</h2>
+          <p>Give your site a fresh, modern look with ongoing technical support and updates.</p>
+        </div>
+
+        <div className="service-card">
+          <div className="icon">
+            <FaLayerGroup />
+          </div>
+          <h2>Landing Page Design</h2>
+          <p>High-converting landing pages that are clean, fast, and built for lead generation.</p>
+        </div>
+      </div>
+
+       {/* Call to Action Section */}
+      <section className="cta-section fade-in">
+        <h2>Ready to start your project?</h2>
+        <p>Let’s work together to build something amazing!</p>
+        <NavLink to="/contact" className="cta-btn">Contact Me</NavLink>
+      </section>
+    </div>
+  );
+};
+
+export default Services;

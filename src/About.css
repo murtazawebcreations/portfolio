@@ -1,0 +1,295 @@
+.about-banner {
+  background: linear-gradient(120deg, #1e293b 60%, #64748b 100%);
+  color: #fff;
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.breadcrumb {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  
+}
+.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 5px;
+}
+.breadcrumb span {
+  margin: 0 5px;
+  
+}
+
+/* About Main Section */
+.about-main-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  background-color: #1C1C1C;
+
+}
+.about-main-content {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  width: 90%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-text {
+  color: #fff;
+  flex: 1 1 320px;
+  min-width: 280px;
+}
+.about-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+.about-text p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.about-image {
+  flex: 1 1 320px;
+  min-width: 220px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Mission & Vision Section */
+.mission-vision-section {
+  background: #1F242D;
+  padding: 50px 0;
+}
+.mission-vision-container {
+  
+  display: flex;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mission-card, .vision-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px #0ef;
+  padding: 32px 24px;
+  flex: 1 1 320px;
+  min-width: 260px;
+  max-width: 400px;
+  text-align: center;
+}
+.mission-card h3, .vision-card h3 {
+  color: #1e293b;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.mission-card p, .vision-card p {
+  color: #334155;
+  font-size: 1.05rem;
+}
+
+/* Testimonails section */
+.testimonials-section {
+  padding: 60px 20px;
+  background-color: #1c1c1c;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.testimonials-title {
+  font-size: 2.5rem;
+  color: #0ef;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.testimonials-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.testimonials-carousel {
+  display: flex;
+  width: max-content;
+  animation: scrollTestimonials 40s linear infinite;
+}
+
+@keyframes scrollTestimonials {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.testimonial-card {
+  width: 300px;
+  background-color: #000;
+  border: 1px solid #0ef;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 10px;
+  min-width: 280px;
+  flex-shrink: 0;
+  box-shadow: 0 0 15px rgba(0, 238, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 238, 255, 0.4);
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  font-style: italic;
+  color: #ccc;
+}
+
+.testimonial-name {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0ef;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-card {
+    min-width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    min-width: 180px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .mission-card, .vision-card {
+    flex: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .mission-card, .vision-card {
+    flex: 100%;
+    margin: 10px;
+  }
+}
+
+
+/* Call to Action Section */
+.cta-section {
+  background: linear-gradient(120deg, #64748b 60%, #1e293b 100%);
+  color: #fff;
+  text-align: center;
+  padding: 60px 0 50px 0;
+}
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+.cta-btn {
+  background: #fff;
+  color: #1e293b;
+  padding: 12px 32px;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(30,41,59,0.10);
+}
+.cta-btn:hover {
+  background: #1e293b;
+  color: #fff;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s forwards;
+}
+.slide-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUp 1.2s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .about-main-content, .mission-vision-container {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  .about-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 600px) {
+  .about-banner {
+    padding: 36px 0 24px 0;
+  }
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+  .about-main-section {
+    padding: 32px 0;
+  }
+  .about-text h2 {
+    font-size: 1.3rem;
+  }
+  .about-text p, .mission-card p, .vision-card p, .cta-section p, .testimonial-text {
+    font-size: 0.98rem;
+  }
+  .testimonials-title, .cta-section h2 {
+    font-size: 1.2rem;
+  }
+  .about-image img {
+    width: 120px;
+    height: 120px;
+  }
+  .mission-card, .vision-card {
+    padding: 18px 10px;
+  }
+  .cta-btn {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+}

@@ -1,0 +1,165 @@
+.resume-section {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 60px 60px;
+  max-width: 1250px;
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(0, 238, 255, 0.2);
+  border-radius: 12px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.resume-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  position: relative;
+  
+}
+
+.resume-underline {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.dot {
+  height: 4px;
+  background-color: #0ef;
+  border-radius: 2px;
+}
+
+.dot-small {
+  width: 12px;
+}
+
+.dot-medium {
+  width: 12px;
+}
+
+.dot.gray {
+  background-color: #0ef;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .resume-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.resume-column {
+  padding: 0 10px;
+}
+
+.section-title {
+  text-align: left;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #0ef;
+  border-left: 3px solid #0ef;
+  padding-left: 10px;
+}
+
+.resume-item {
+  position: relative;
+  border-left: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  
+  background-color: #1c1c1c;
+  animation: slideUp 0.7s ease-in-out;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.badge {
+  position: absolute;
+  left: -18px;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+  background-color: #0ef;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 22px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 238, 255, 0.6);
+}
+
+.item-years {
+  padding: 5px;
+  padding-left: 30px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.001) 100%);
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.item-title {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.item-company {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #0ef;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.item-description {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px){
+ .resume-section{
+  padding: 12px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+ }
+ .resume-title, .section-title{
+  font-size: 27px;
+ }
+}

@@ -1,0 +1,159 @@
+.footer-modern {
+  background: linear-gradient(135deg, #232526 0%, #1f242d 100%);
+  color: #fff;
+  border-radius: 32px 32px 0 0;
+  margin: 60px 2vw 0 2vw;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.8s cubic-bezier(.4,0,.2,1), transform 0.8s cubic-bezier(.4,0,.2,1);
+  will-change: opacity, transform;
+}
+
+.footer-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer-modern-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 48px 5vw 24px 5vw;
+}
+
+.footer-modern-section {
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 320px;
+  background: rgba(34, 193, 195, 0.07);
+  border-radius: 18px;
+  padding: 40px 28px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 12px rgba(0,238,255,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-modern-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+  color: #0ef;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.footer-modern-section p,
+.footer-modern-section a,
+.footer-modern-section ul li a {
+  color: #e0e0e0;
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-modern-section p{
+  line-height: 24px;
+}
+
+.footer-modern-section a:hover,
+.footer-modern-section ul li a:hover {
+  color: #0ef;
+}
+
+.footer-modern-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-modern-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-modern-social-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.footer-modern-social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  color: #0ef;
+  font-size: 22px;
+  background: rgba(0,238,255,0.08);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.footer-modern-social-media a:hover {
+  background: #0ef;
+  color: #1f242d;
+  box-shadow: 0 0 10px #0ef;
+}
+
+.footer-modern-bottom {
+  border-top: 1px solid #0ef;
+  margin: 0 5vw;
+  padding-top: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  opacity: 0.8;
+  margin-bottom: 18px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1100px) {
+  .footer-modern-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 36px 3vw 18px 3vw;
+  }
+  .footer-modern-section {
+    max-width: 100%;
+    margin-bottom: 24px;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-modern-section h3,
+  .footer-modern-section p,
+  .footer-modern-section ul li a {
+    text-align: center;
+  }
+  .footer-modern-social-media {
+    justify-content: center;
+  }
+  .footer-modern-bottom {
+    margin: 0 3vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-modern {
+    border-radius: 18px 18px 0 0;
+    margin: 32px 0 0 0;
+    padding: 0;
+  }
+  .footer-modern-container {
+    padding: 24px 2vw 12px 2vw;
+  }
+  .footer-modern-section {
+    padding: 30px 30px;
+    margin-bottom: 15px;
+  }
+  .footer-modern-bottom {
+    font-size: 12px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+}

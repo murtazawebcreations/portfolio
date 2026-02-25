@@ -1,0 +1,52 @@
+/* Hide default cursor */
+body {
+  cursor: none;
+}
+
+/* Outer ring */
+.cursor {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 
+    width 0.3s ease,
+    height 0.3s ease,
+    background 0.3s ease,
+    border 0.3s ease;
+  z-index: 9999;
+  box-shadow: 0 0 15px #0efaa0;
+}
+
+/* Inner dot */
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: #0ef;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* Grow effect */
+.cursor-grow {
+  width: 0px;
+  height: 0px;
+  background: rgba(0, 238, 255, 0.1);
+}
+@media (hover: none), (pointer: coarse) {
+  .custom-cursor,
+  .custom-cursor-dot,
+  .custom-cursor-outline {
+    display: none !important;
+  }
+
+  body {
+    cursor: auto !important;
+  }
+}

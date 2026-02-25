@@ -1,0 +1,151 @@
+.home-portfolio-section {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background: transparent;
+  text-align: center;
+}
+
+.portfolio-subheading {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: slideRight 0.6s ease forwards;
+}
+
+.portfolio-heading {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #0ef;
+  margin-bottom: 40px;
+  opacity: 0;
+  animation: slideBottom 0.6s ease forwards;
+}
+
+.home-portfolio-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1024px) {
+  .home-portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-portfolio-item {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 238, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-portfolio-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(0, 238, 255, 0.3);
+}
+
+.portfolio-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.home-portfolio-item:hover .portfolio-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.visit-site-button {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  background: #0ef;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  text-decoration: none; /* removes underline */
+}
+
+.home-portfolio-item:hover .visit-site-button {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
+}
+
+.portfolio-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio-info h3 {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff; /* changed to white */
+  margin: 0;
+}
+
+.explore-portfolio-wrapper {
+  margin-top: 40px;
+}
+
+.explore-portfolio-button {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #0ef;
+  background: transparent;
+  color: #0ef;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.explore-portfolio-button:hover {
+  background: #0ef;
+  color: #000;
+  box-shadow: 0 0 15px #0ef;
+}
+
+/* Animations */
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
