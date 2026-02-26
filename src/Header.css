@@ -64,12 +64,18 @@
   padding: 10px 20px;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   transition: transform 0.3s;
 }
 
 .hire-button:hover {
+  background-color: transparent;
+  border: 1px solid #0ef;
+  border-radius: 8px;
+  color: #fff;
   transform: scale(1.05);
+  transition: all 0.3s ease;
+  
 }
 
 .menu-icon {

@@ -28,7 +28,7 @@ export default function AboutSection() {
           <div className="info-grid">
             <ul>
               <li><strong>Birthday:</strong> 21 June 2003</li>
-              <li><strong>Website:</strong> www.example.com</li>
+              <li><strong>Website:</strong><a href="https://murtazawebcreations.vercel.app" target="_blank" rel="noopener noreferrer"> murtazawebcreations.vercel.app</a></li>
               <li><strong>Phone:</strong> <a href="tel:+923164667703"> +923164667703</a></li>
               <li><strong>City:</strong><a href="https://maps.app.goo.gl/tadZ5UUSRAisps9FA" target="_blank" rel="noopener noreferrer"> Lahore, Pakistan</a></li>
             </ul>

@@ -104,13 +104,18 @@
   font-size: 16px;
   color: #1f242d;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #fff;
-  color: #0ef;
+  background-color: transparent;
+  border: 1px solid #0ef;
+  border-radius: 8px;
+  color: #fff;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 

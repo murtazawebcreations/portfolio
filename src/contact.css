@@ -141,13 +141,18 @@
   border: none;
   border-radius: 8px;
   color: #000;
-  font-weight: bold;
+  font-weight: 500;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .contact-form button:hover {
-  background: #00c3ff;
+  background-color: transparent;
+  border: 1px solid #0ef;
+  border-radius: 8px;
+  color: #fff;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 /* ===== REVEAL ANIMATION ===== */
