@@ -140,8 +140,8 @@ const Contact = () => {
         <form ref={form} onSubmit={sendEmail} className="contact-form reveal">
 
           {sent && (
-            <p style={{ color: "green", marginBottom: "15px" }}>
-              ✅ Thank you! Your message has been sent successfully.
+            <p style={{ color: "#fff", marginBottom: "15px" }}>
+               Thank you! Your message has been sent successfully.✅
             </p>
           )}
 
@@ -158,6 +158,12 @@ const Contact = () => {
             placeholder="Email Address"
             required
           />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            required
+          />
 
           <input
             type="text"
@@ -169,7 +175,6 @@ const Contact = () => {
             name="message"
             placeholder="Your Message"
             rows="5"
-            required
           ></textarea>
 
           <button type="submit">Send Message</button>
