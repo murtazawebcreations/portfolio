@@ -103,12 +103,12 @@
 .footer-modern-bottom {
   border-top: 1px solid #0ef;
   margin: 0 5vw;
-  padding-top: 18px;
+  padding: 20px 0 20px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 13px;
   color: #fff;
   opacity: 0.8;
-  margin-bottom: 18px;
+  
 }
 
 /* Responsive Styles */
