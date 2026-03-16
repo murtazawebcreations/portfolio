@@ -37,13 +37,15 @@
 }
 
 .services-container {
-  padding: 40px;
+  padding: 40px 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   justify-items: center;
   animation: zoomin 1s ease forwards;
   animation-delay: 0.5s;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 .service-card {

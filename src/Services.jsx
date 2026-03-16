@@ -1,5 +1,8 @@
 import React from 'react';
-import { FaWordpress, FaReact, FaShopify, FaLaptopCode, FaRocket, FaDraftingCompass, FaRedoAlt, FaLayerGroup } from 'react-icons/fa';
+import { FaWordpress, FaReact, FaShopify, FaLaptopCode, FaRocket, FaDraftingCompass, FaRedoAlt, FaLayerGroup} from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowTrendUp } from '@fortawesome/free-solid-svg-icons';
+import { faSearchengin } from '@fortawesome/free-brands-svg-icons';
 import { NavLink } from 'react-router-dom';
 import './Services.css';
 
@@ -96,6 +99,20 @@ const Services = () => {
           </div>
           <h2>Landing Page Design</h2>
           <p>High-converting landing pages that are clean, fast, and built for lead generation.</p>
+        </div>
+        <div className="service-card">
+          <div className="icon">
+            <FontAwesomeIcon icon={faArrowTrendUp} />
+          </div>
+          <h2>Website Performance Audit</h2>
+          <p>Comprehensive analysis of your website’s speed and performance with actionable improvements for better user experience and SEO rankings.</p>
+        </div>
+        <div className="service-card">
+          <div className="icon">
+            <FontAwesomeIcon icon={faSearchengin} />
+          </div>
+          <h2>SEO-Friendly Website Development</h2>
+          <p>Build websites structured for search engine visibility with optimized code, fast loading speeds, and proper on-page SEO foundations.</p>
         </div>
       </div>
 

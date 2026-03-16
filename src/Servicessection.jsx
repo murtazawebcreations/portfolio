@@ -1,5 +1,6 @@
 import React from "react";
 import "./Servicessection.css";
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -31,22 +32,7 @@ const services = [
     title: "Speed Optimization",
     description: "Improve site speed, SEO rankings, and Core Web Vitals performance.",
     image: "Speed Optimization.jpg"
-  },
-  {
-    title: "UI/UX Design (Figma to Code)",
-    description: "Convert stunning UI/UX designs into functional frontends.",
-    image: "UI_UX Design (Figma to Code).jpg"
-  },
-  {
-    title: "Website Redesign & Maintenance",
-    description: "Redesign old websites, fix bugs, and keep your site updated.",
-    image: "Website Redesign & Maintenance.jpg"
-  },
-  {
-    title: "Landing Page Design",
-    description: "Conversion-optimized landing pages for ads and marketing.",
-    image: "Landing Page Design.jpg"
-  },
+  }
   
 
 ];
@@ -54,7 +40,8 @@ const services = [
 export default function Servicessection() {
   return (
     <section id="services-section1" className="services-section1">
-      <h2 className="section-title">What I Offer</h2>
+      <h2 className="services-subheading">What I Offer</h2>
+      <h2 className="section-title">Modern web solutions built for performance and growth.</h2>
       <div className="services-grid">
         {services.map((service, index) => (
           <div key={index} className="service-card1">
@@ -67,6 +54,11 @@ export default function Servicessection() {
             <p className="service-description">{service.description}</p>
           </div>
         ))}
+      </div>
+      <div className="explore-services-wrapper">
+        <Link to="/services" className="explore-services-button">
+          Explore Services
+        </Link>
       </div>
     </section>
   );

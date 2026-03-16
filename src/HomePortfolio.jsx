@@ -39,15 +39,16 @@ const homePortfolioItems = [
 export default function HomePortfolio() {
   return (
     <section className="home-portfolio-section">
-      <h2 className="portfolio-subheading">Featured Projects</h2>
-      <h1 className="portfolio-heading">My Top Work</h1>
+      <div className="home-portfolio-container">
+        <h2 className="portfolio-subheading">Featured Projects</h2>
+        <h1 className="portfolio-heading">A showcase of projects built with passion and precision.</h1>
 
-      <div className="home-portfolio-grid">
-        {homePortfolioItems.map((item, index) => (
-          <div className="home-portfolio-item" key={index}>
-            <div className="portfolio-img-wrapper">
-              <img src={encodeURI(item.image)} alt={item.title} />
-              <a className="visit-site-button" href={item.link} target="_blank" rel="noopener noreferrer">
+        <div className="home-portfolio-grid">
+          {homePortfolioItems.map((item, index) => (
+            <div className="home-portfolio-item" key={index}>
+              <div className="portfolio-img-wrapper">
+                <img src={encodeURI(item.image)} alt={item.title} />
+                <a className="visit-site-button" href={item.link} target="_blank" rel="noopener noreferrer">
                 Visit Site
               </a>
             </div>
@@ -63,6 +64,7 @@ export default function HomePortfolio() {
           Explore Portfolio
         </Link>
       </div>
+    </div>
     </section>
   );
 }
