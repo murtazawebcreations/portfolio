@@ -52,6 +52,9 @@ const Home = () => {
             <a href="https://www.linkedin.com/in/murtazawebcreations/" target="_blank" rel="noopener noreferrer" style={{ "--i": 10 }}>
               <i className="bx bxl-linkedin"></i>
             </a>
+            <a href="https://github.com/murtazawebcreations" target="_blank" rel="noopener noreferrer" style={{ "--i": 11 }}>
+              <i className="bx bxl-github"></i>
+            </a>
           </div>
           <a href="/Murtaza%27s%20CV.pdf" download="Murtaza's_CV" className="btn">Download Resume</a>
         </div>

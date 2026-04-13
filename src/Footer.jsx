@@ -53,6 +53,7 @@ const Footer = () => {
             <a href="https://www.instagram.com/murtazawebcreations/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="bx bxl-instagram"></i></a>
             <a href="https://www.behance.net/M_Murtaza" target="_blank" rel="noopener noreferrer" aria-label="behance"><i className="bx bxl-behance"></i></a>
             <a href="https://www.linkedin.com/in/murtazawebcreations/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/murtazawebcreations" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i className="bx bxl-github"></i></a>
           </div>
         </div>
       </div>
